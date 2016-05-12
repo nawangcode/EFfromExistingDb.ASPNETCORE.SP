@@ -29,12 +29,7 @@
   },
 
   "frameworks": {
-    "dnx451": {
-      "dependencies": {
-        "R5Diagnostics.SharedLibrary": "1.0.0-*",
-        "Rauland.R5TraceListeners": "1.0.0-*"
-      }
-    },
+    "dnx451": {},
     "dnxcore50": { }
   },
 

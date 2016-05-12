@@ -1605,17 +1605,6 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "R5Diagnostics.SharedLibrary/1.0.0": {
-        "type": "project",
-        "framework": "DNX,Version=v4.5.1",
-        "dependencies": {
-          "Rauland.R5TraceListeners": "1.0.0"
-        }
-      },
-      "Rauland.R5TraceListeners/1.0.0": {
-        "type": "project",
-        "framework": "DNX,Version=v4.5.1"
-      },
       "Remotion.Linq/2.0.1": {
         "type": "package",
         "compile": {
@@ -5925,17 +5914,6 @@
           "lib/net45/Newtonsoft.Json.dll": {}
         }
       },
-      "R5Diagnostics.SharedLibrary/1.0.0": {
-        "type": "project",
-        "framework": "DNX,Version=v4.5.1",
-        "dependencies": {
-          "Rauland.R5TraceListeners": "1.0.0"
-        }
-      },
-      "Rauland.R5TraceListeners/1.0.0": {
-        "type": "project",
-        "framework": "DNX,Version=v4.5.1"
-      },
       "Remotion.Linq/2.0.1": {
         "type": "package",
         "compile": {
@@ -7762,17 +7740,6 @@
         "runtime": {
           "lib/net45/Newtonsoft.Json.dll": {}
         }
-      },
-      "R5Diagnostics.SharedLibrary/1.0.0": {
-        "type": "project",
-        "framework": "DNX,Version=v4.5.1",
-        "dependencies": {
-          "Rauland.R5TraceListeners": "1.0.0"
-        }
-      },
-      "Rauland.R5TraceListeners/1.0.0": {
-        "type": "project",
-        "framework": "DNX,Version=v4.5.1"
       },
       "Remotion.Linq/2.0.1": {
         "type": "package",
@@ -13821,14 +13788,6 @@
     }
   },
   "libraries": {
-    "R5Diagnostics.SharedLibrary/1.0.0": {
-      "type": "project",
-      "path": "../../wrap/R5Diagnostics.SharedLibrary/project.json"
-    },
-    "Rauland.R5TraceListeners/1.0.0": {
-      "type": "project",
-      "path": "../../wrap/Rauland.R5TraceListeners/project.json"
-    },
     "EntityFramework.Commands/7.0.0-rc1-final": {
       "type": "package",
       "serviceable": true,
@@ -19268,10 +19227,7 @@
       "Microsoft.Extensions.Logging.Debug >= 1.0.0-rc1-final",
       "Microsoft.VisualStudio.Web.BrowserLink.Loader >= 14.0.0-rc1-final"
     ],
-    "DNX,Version=v4.5.1": [
-      "R5Diagnostics.SharedLibrary >= 1.0.0-*",
-      "Rauland.R5TraceListeners >= 1.0.0-*"
-    ],
+    "DNX,Version=v4.5.1": [],
     "DNXCore,Version=v5.0": []
   }
 }
