@@ -1,0 +1,52 @@
+﻿@model IEnumerable<EFfromExistingDb.Models.tbEvent_Display>
+
+@{
+    ViewBag.Title = "logs";
+}
+
+<h2>R5 Logs</h2>
+
+<p>
+    <a asp-action="Index">back</a>
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.dtLogged)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idLevel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idMachine)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sMessage)
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.dtLogged)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idLevel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idMachine)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sMessage)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.idEvent">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.idEvent">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.idEvent">Delete</a>
+            </td>
+        </tr>
+    }
+</table>

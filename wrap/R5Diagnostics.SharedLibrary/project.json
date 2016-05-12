@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "dnx451": {
+      "bin": {
+        "assembly": "../../lib/dnx451/R5Diagnostics.SharedLibrary.dll"
+      },
+      "dependencies": {
+        "Rauland.R5TraceListeners": "1.0.0-*"
+      }
+    }
+  }
+}
